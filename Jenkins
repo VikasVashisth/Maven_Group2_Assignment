@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Branch") {
             steps {
-                git branch: 'pipeline_1', url: 'https://github.com/VikasVashisth/Maven_Group2_Assignment.git'
+                git branch: 'maven_group2', url: 'https://github.com/VikasVashisth/Maven_Group2_Assignment.git'
             }
         }
         stage("Test"){

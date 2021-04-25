@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+
+    stages{
+        stage("Build"){
+            steps{
+                echo 'Hello to Jenkins file'
+            }
+        }
+        stage("Branch") {
+            steps {
+                git branch: 'main', url: 'https://github.com/VikasVashisth/Maven_Group2_Assignment.git'
+            }
+        }
+        stage("Test"){
+            steps{
+                echo 'Testing the Jenkins file'
+            }
+        }
+    }
+}
